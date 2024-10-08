@@ -1,6 +1,5 @@
 {% set version = "1.0.8" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-dartr.data
@@ -13,8 +12,7 @@ source:
   sha256: 37164e65c54a18a80b883d77dba2754284331ae16ffca3041b5cce392dc7369d
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
