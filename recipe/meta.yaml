@@ -1,4 +1,4 @@
-{% set version = "1.0.8" %}
+{% set version = "1.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dartR.data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dartR.data/dartR.data_{{ version }}.tar.gz
-  sha256: 37164e65c54a18a80b883d77dba2754284331ae16ffca3041b5cce392dc7369d
+  sha256: 9bd640faaea7b7012a5b9e5fc73d7a6774766e9a164f4890edd8d44ef39941b3
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,8 +37,8 @@ test:
 about:
   home: https://github.com/green-striped-gecko/dartR.data
   license: GPL-3.0-or-later
-  summary: Data package for 'dartR'. Provides data sets to run examples in 'dartR'. This was necessary due to the size limit imposed by 'CRAN'. The data in 'dartR.data' is needed to run the examples provided in the 'dartR' functions. All available data sets are either based on actual data (but reduced in size) and/or simulated
-    data sets to allow the fast execution of examples and demonstration of the functions.
+  summary: Data package for 'dartR'. Provides data sets to run examples in 'dartR'. This was necessary due to the size limit imposed by 'CRAN'. The data in 'dartR.data' is needed to run the examples provided in the 'dartR' functions. All available data sets are either based on actual data (but reduced in size) and/or 
+    simulated data sets to allow the fast execution of examples and demonstration of the functions.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
