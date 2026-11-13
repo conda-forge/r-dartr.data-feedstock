@@ -1,4 +1,4 @@
-{% set version = "1.2.2" %}
+{% set version = "1.2.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dartR.data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dartR.data/dartR.data_{{ version }}.tar.gz
-  sha256: 9bd640faaea7b7012a5b9e5fc73d7a6774766e9a164f4890edd8d44ef39941b3
+  sha256: 1e1aac256850489fe9f512f0e357f6f9452f49d038daee123ced780bdc17d8ad
 
 build:
   number: 0
